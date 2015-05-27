@@ -1,14 +1,21 @@
-﻿using NUnit.Framework;
+﻿using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
 
 namespace RefactoringSpikeTwo.ReplaceTypeCodeWithClass
 {
     [TestFixture]
     public class ReplaceTypeCodeWithClassTests
     {
-        [TestCase(Person.O)]
-        [TestCase(Person.A)]
-        [TestCase(Person.B)]
-        [TestCase(Person.AB)]
+        private readonly IEnumerable<int> _testCases = new List<int>
+        {
+            Person.O,
+            Person.A,
+            Person.B,
+            Person.AB
+        };
+
+        [TestCaseSource("_testCases")]
         public void A_person_has_a_blood_group(int bloodGroup)
         {
             var person = new Person(bloodGroup);
@@ -16,10 +23,7 @@ namespace RefactoringSpikeTwo.ReplaceTypeCodeWithClass
             Assert.That(person.BloodGroup, Is.EqualTo(bloodGroup));
         }
 
-        [TestCase(Person.O)]
-        [TestCase(Person.A)]
-        [TestCase(Person.B)]
-        [TestCase(Person.AB)]
+        [TestCaseSource("_testCases")]
         public void A_persons_blood_group_can_be_amended(int bloodGroup)
         {
             var person = new Person(Person.O);
