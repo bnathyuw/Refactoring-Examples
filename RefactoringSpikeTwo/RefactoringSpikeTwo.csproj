@@ -56,6 +56,8 @@
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectTests.cs" />
     <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQuerySut.cs" />
     <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQueryTests.cs" />
+    <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
+    <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableSut.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableTests.cs" />
   </ItemGroup>
@@ -67,6 +69,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
