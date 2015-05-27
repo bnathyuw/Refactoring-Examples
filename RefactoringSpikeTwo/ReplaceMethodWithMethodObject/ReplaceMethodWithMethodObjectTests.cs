@@ -6,7 +6,7 @@ namespace RefactoringSpikeTwo.ReplaceMethodWithMethodObject
     public class ReplaceMethodWithMethodObjectTests
     {
         [Test]
-        public void Foo()
+        public void Gives_assured_result()
         {
             var sut = new ReplaceMethodWithMethodObjectSut();
 

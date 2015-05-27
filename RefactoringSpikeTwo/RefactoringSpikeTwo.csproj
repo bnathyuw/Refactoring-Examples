@@ -46,6 +46,9 @@
     <Compile Include="ExtractMethod\ExtractMethodTests.cs" />
     <Compile Include="ExtractMethod\IOutput.cs" />
     <Compile Include="ExtractMethod\Order.cs" />
+    <Compile Include="MoveField\Account.cs" />
+    <Compile Include="MoveField\AccountType.cs" />
+    <Compile Include="MoveField\MoveFieldTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectSut.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectTests.cs" />
