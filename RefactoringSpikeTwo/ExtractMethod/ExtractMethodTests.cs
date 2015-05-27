@@ -22,10 +22,10 @@ namespace RefactoringSpikeTwo.ExtractMethod
             }, "Bloggs");
 
             subject.PrintOwing();
-
             var actual = _sb.ToString();
-            var expected = File.ReadAllText("ExtractMethod/extract_method_output.txt");
-            Assert.That(actual, Is.EqualTo(expected));
+            
+            var assured = File.ReadAllText("ExtractMethod/extract_method_output.txt");
+            Assert.That(actual, Is.EqualTo(assured));
         }
 
         public void WriteLine(string output)

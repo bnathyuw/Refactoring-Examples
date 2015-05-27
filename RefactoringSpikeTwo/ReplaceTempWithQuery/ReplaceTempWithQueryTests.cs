@@ -10,9 +10,10 @@ namespace RefactoringSpikeTwo.ReplaceTempWithQuery
         {
             var sut = new ReplaceTempWithQuerySut(20, 10);
 
-            var price = sut.GetPrice();
+            var actual = sut.GetPrice();
 
-            Assert.That(price, Is.EqualTo(196.0));
+            const double assured = 196.0;
+            Assert.That(actual, Is.EqualTo(assured));
         }
 
         [Test]
@@ -20,9 +21,10 @@ namespace RefactoringSpikeTwo.ReplaceTempWithQuery
         {
             var sut = new ReplaceTempWithQuerySut(20, 100);
 
-            var price = sut.GetPrice();
+            var actual = sut.GetPrice();
 
-            Assert.That(price, Is.EqualTo(1900.0));
+            var assured = 1900.0;
+            Assert.That(actual, Is.EqualTo(assured));
         }
     }
 }
