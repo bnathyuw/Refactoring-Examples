@@ -58,6 +58,8 @@
     <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQueryTests.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\Employee.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\ReplaceTypeCodeWithStateStrategyTests.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableSut.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableTests.cs" />
   </ItemGroup>
