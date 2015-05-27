@@ -47,6 +47,8 @@
     <Compile Include="ExtractMethod\IOutput.cs" />
     <Compile Include="ExtractMethod\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectSut.cs" />
+    <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectTests.cs" />
     <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQuerySut.cs" />
     <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQueryTests.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableSut.cs" />
