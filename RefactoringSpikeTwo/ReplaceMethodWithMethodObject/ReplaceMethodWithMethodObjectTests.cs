@@ -12,7 +12,7 @@ namespace RefactoringSpikeTwo.ReplaceMethodWithMethodObject
 
             var actual = sut.Gamma(2, 4, 6);
 
-            const int assured = 768;
+            const int assured = 728;
             Assert.That(actual, Is.EqualTo(assured));
         }
     }
