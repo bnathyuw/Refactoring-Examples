@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.ExtractClass
+namespace RefactoringExamples.ExtractClass
 {
     [TestFixture]
     public class ExtractClassTests

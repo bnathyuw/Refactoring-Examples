@@ -1,4 +1,4 @@
-﻿namespace RefactoringSpikeTwo.ExtractClass
+﻿namespace RefactoringExamples.ExtractClass
 {
     public class Person
     {

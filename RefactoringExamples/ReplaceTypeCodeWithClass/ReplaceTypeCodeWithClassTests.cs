@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.ReplaceTypeCodeWithClass
+namespace RefactoringExamples.ReplaceTypeCodeWithClass
 {
     [TestFixture]
     public class ReplaceTypeCodeWithClassTests

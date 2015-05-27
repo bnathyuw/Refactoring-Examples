@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringSpikeTwo", "RefactoringSpikeTwo\RefactoringSpikeTwo.csproj", "{95385D5C-16A3-4903-8DC7-96701EDB4395}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringExamples", "RefactoringExamples\RefactoringExamples.csproj", "{95385D5C-16A3-4903-8DC7-96701EDB4395}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

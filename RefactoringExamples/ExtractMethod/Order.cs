@@ -1,4 +1,4 @@
-namespace RefactoringSpikeTwo.ExtractMethod
+namespace RefactoringExamples.ExtractMethod
 {
     public class Order
     {

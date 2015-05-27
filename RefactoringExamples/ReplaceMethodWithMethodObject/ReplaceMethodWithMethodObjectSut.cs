@@ -1,4 +1,4 @@
-﻿namespace RefactoringSpikeTwo.ReplaceMethodWithMethodObject
+﻿namespace RefactoringExamples.ReplaceMethodWithMethodObject
 {
     public class ReplaceMethodWithMethodObjectSut
     {

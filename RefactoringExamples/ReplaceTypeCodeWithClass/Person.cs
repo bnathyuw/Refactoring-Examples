@@ -1,4 +1,4 @@
-namespace RefactoringSpikeTwo.ReplaceTypeCodeWithClass
+namespace RefactoringExamples.ReplaceTypeCodeWithClass
 {
     public class Person
     {

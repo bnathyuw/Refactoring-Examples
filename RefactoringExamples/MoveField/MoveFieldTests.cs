@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.MoveField
+namespace RefactoringExamples.MoveField
 {
     [TestFixture]
     public class MoveFieldTests

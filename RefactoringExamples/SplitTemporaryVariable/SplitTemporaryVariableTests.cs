@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.SplitTemporaryVariable
+namespace RefactoringExamples.SplitTemporaryVariable
 {
     [TestFixture]
     public class SplitTemporaryVariableTests

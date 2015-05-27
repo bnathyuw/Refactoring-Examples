@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.ReplaceTempWithQuery
+namespace RefactoringExamples.ReplaceTempWithQuery
 {
     [TestFixture]
     public class ReplaceTempWithQueryTests

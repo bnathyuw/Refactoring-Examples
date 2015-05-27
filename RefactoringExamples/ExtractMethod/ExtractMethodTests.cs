@@ -3,7 +3,7 @@
  using System.Text;
  using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.ExtractMethod
+namespace RefactoringExamples.ExtractMethod
 {
     [TestFixture]
     public class ExtractMethodTests:IOutput

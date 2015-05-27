@@ -1,4 +1,4 @@
-﻿namespace RefactoringSpikeTwo.MoveField
+﻿namespace RefactoringExamples.MoveField
 {
     public class Account
     {

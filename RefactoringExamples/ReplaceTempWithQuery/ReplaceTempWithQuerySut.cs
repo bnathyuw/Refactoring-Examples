@@ -1,4 +1,4 @@
-﻿namespace RefactoringSpikeTwo.ReplaceTempWithQuery
+﻿namespace RefactoringExamples.ReplaceTempWithQuery
 {
     public class ReplaceTempWithQuerySut
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace RefactoringSpikeTwo.SplitTemporaryVariable
+namespace RefactoringExamples.SplitTemporaryVariable
 {
     public class SplitTemporaryVariableSut
     {

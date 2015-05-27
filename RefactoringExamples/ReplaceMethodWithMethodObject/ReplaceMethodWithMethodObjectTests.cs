@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RefactoringSpikeTwo.ReplaceMethodWithMethodObject
+namespace RefactoringExamples.ReplaceMethodWithMethodObject
 {
     [TestFixture]
     public class ReplaceMethodWithMethodObjectTests

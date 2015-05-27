@@ -7,8 +7,8 @@
     <ProjectGuid>{95385D5C-16A3-4903-8DC7-96701EDB4395}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RefactoringSpikeTwo</RootNamespace>
-    <AssemblyName>RefactoringSpikeTwo</AssemblyName>
+    <RootNamespace>RefactoringExamples</RootNamespace>
+    <AssemblyName>RefactoringExamples</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

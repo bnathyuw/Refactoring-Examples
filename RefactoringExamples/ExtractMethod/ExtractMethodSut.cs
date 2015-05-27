@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace RefactoringSpikeTwo.ExtractMethod
+namespace RefactoringExamples.ExtractMethod
 {
     public class ExtractMethodSut
     {
