@@ -2,16 +2,24 @@
 
 namespace RefactoringExamples.SeparateQueryFromModifier
 {
-    public class MiscreantFinder
+    public class SecurityChecker
     {
         private readonly ISendAlerts _alertSender;
+        private readonly IMiscreantBlocker _miscreantBlocker;
 
-        public MiscreantFinder(ISendAlerts alertSender)
+        public SecurityChecker(ISendAlerts alertSender, IMiscreantBlocker miscreantBlocker)
         {
             _alertSender = alertSender;
+            _miscreantBlocker = miscreantBlocker;
         }
 
-        public string FoundMiscreant(IEnumerable<string> people)
+        public void CheckSecurity(IEnumerable<string> people)
+        {
+            var found = FoundMiscreant(people);
+            _miscreantBlocker.BlockMiscreant(found);
+        }
+
+        private string FoundMiscreant(IEnumerable<string> people)
         {
             foreach (var person in people)
             {
@@ -33,5 +41,10 @@ namespace RefactoringExamples.SeparateQueryFromModifier
         {
             _alertSender.SendAlert();
         }
+    }
+
+    public interface IMiscreantBlocker
+    {
+        void BlockMiscreant(string miscreant);
     }
 }
