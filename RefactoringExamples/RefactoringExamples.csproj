@@ -50,6 +50,9 @@
     <Compile Include="ExtractMethod\ExtractMethodTests.cs" />
     <Compile Include="ExtractMethod\IOutput.cs" />
     <Compile Include="ExtractMethod\Order.cs" />
+    <Compile Include="IntroduceParameterObject\Account.cs" />
+    <Compile Include="IntroduceParameterObject\Entry.cs" />
+    <Compile Include="IntroduceParameterObject\IntroduceParameterObjectTests.cs" />
     <Compile Include="MoveField\Account.cs" />
     <Compile Include="MoveField\AccountType.cs" />
     <Compile Include="MoveField\MoveFieldTests.cs" />
