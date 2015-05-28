@@ -62,6 +62,9 @@
     <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\Employee.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\ReplaceTypeCodeWithStateStrategyTests.cs" />
+    <Compile Include="SeparateQueryFromModifier\ISendAlerts.cs" />
+    <Compile Include="SeparateQueryFromModifier\MiscreantFinder.cs" />
+    <Compile Include="SeparateQueryFromModifier\SeparateQueryFromModifierTests.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableSut.cs" />
     <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableTests.cs" />
   </ItemGroup>
