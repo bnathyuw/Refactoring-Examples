@@ -55,6 +55,8 @@
     <Compile Include="ExtractMethod\CustomerAccountShould.cs" />
     <Compile Include="ExtractMethod\IOutput.cs" />
     <Compile Include="ExtractMethod\Order.cs" />
+    <Compile Include="InlineMethod\Courier.cs" />
+    <Compile Include="InlineMethod\CourierShould.cs" />
     <Compile Include="IntroduceParameterObject\Account.cs" />
     <Compile Include="IntroduceParameterObject\Entry.cs" />
     <Compile Include="IntroduceParameterObject\IntroduceParameterObjectTests.cs" />
