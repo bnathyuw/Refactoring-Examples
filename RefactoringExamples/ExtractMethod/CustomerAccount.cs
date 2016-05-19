@@ -2,13 +2,13 @@ using System.Collections.Generic;
 
 namespace RefactoringExamples.ExtractMethod
 {
-    public class ExtractMethodSut
+    public class CustomerAccount
     {
         private readonly IOutput _output;
         private readonly IEnumerable<Order> _orders;
         private readonly string _name;
 
-        public ExtractMethodSut(IOutput output, IEnumerable<Order> orders, string name)
+        public CustomerAccount(IOutput output, IEnumerable<Order> orders, string name)
         {
             _output = output;
             _orders = orders;
