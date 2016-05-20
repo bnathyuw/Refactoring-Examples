@@ -69,8 +69,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectSut.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectTests.cs" />
-    <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQuerySut.cs" />
-    <Compile Include="ReplaceTempWithQuery\ReplaceTempWithQueryTests.cs" />
+    <Compile Include="ReplaceTempWithQuery\OrderLine.cs" />
+    <Compile Include="ReplaceTempWithQuery\OrderLineShould.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\Employee.cs" />
