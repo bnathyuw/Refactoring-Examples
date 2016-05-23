@@ -1,5 +1,4 @@
-﻿using System.Threading;
-using NSubstitute;
+﻿using NSubstitute;
 using NUnit.Framework;
 
 namespace RefactoringExamples.IntroduceExplainingVariable
