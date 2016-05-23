@@ -82,8 +82,8 @@
     <Compile Include="SeparateQueryFromModifier\ISendAlerts.cs" />
     <Compile Include="SeparateQueryFromModifier\SecurityChecker.cs" />
     <Compile Include="SeparateQueryFromModifier\SeparateQueryFromModifierTests.cs" />
-    <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableSut.cs" />
-    <Compile Include="SplitTemporaryVariable\SplitTemporaryVariableTests.cs" />
+    <Compile Include="SplitTemporaryVariable\Haggis.cs" />
+    <Compile Include="SplitTemporaryVariable\HaggisShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

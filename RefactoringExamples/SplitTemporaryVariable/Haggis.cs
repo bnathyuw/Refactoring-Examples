@@ -2,14 +2,14 @@ using System;
 
 namespace RefactoringExamples.SplitTemporaryVariable
 {
-    public class SplitTemporaryVariableSut
+    public class Haggis
     {
         private readonly double _primaryForce;
         private readonly double _mass;
         private readonly int _delay;
         private readonly double _secondaryForce;
 
-        public SplitTemporaryVariableSut(double primaryForce, double mass, int delay, double secondaryForce)
+        public Haggis(double primaryForce, double mass, int delay, double secondaryForce)
         {
             _primaryForce = primaryForce;
             _mass = mass;
