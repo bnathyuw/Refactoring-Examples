@@ -60,6 +60,8 @@
     <Compile Include="InlineTemp\BigOrderDetector.cs" />
     <Compile Include="InlineTemp\BigOrderDetectorShould.cs" />
     <Compile Include="InlineTemp\Order.cs" />
+    <Compile Include="IntroduceExplainingVariable\UserInterface.cs" />
+    <Compile Include="IntroduceExplainingVariable\UserInterfaceShould.cs" />
     <Compile Include="IntroduceParameterObject\Account.cs" />
     <Compile Include="IntroduceParameterObject\Entry.cs" />
     <Compile Include="IntroduceParameterObject\IntroduceParameterObjectTests.cs" />
