@@ -78,7 +78,9 @@
     <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\Employee.cs" />
-    <Compile Include="ReplaceTypeCodeWithStateStrategy\ReplaceTypeCodeWithStateStrategyTests.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInManagerRoleShould.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInSalespersonRoleShould.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInEngineerRoleShould.cs" />
     <Compile Include="SeparateQueryFromModifier\ISendAlerts.cs" />
     <Compile Include="SeparateQueryFromModifier\SecurityChecker.cs" />
     <Compile Include="SeparateQueryFromModifier\SeparateQueryFromModifierTests.cs" />
