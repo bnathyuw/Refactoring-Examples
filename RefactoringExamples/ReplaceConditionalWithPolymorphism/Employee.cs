@@ -19,7 +19,7 @@ namespace RefactoringExamples.ReplaceConditionalWithPolymorphism
 
         public int Type
         {
-            get { return _employeeType.TypeCode; }
+            get { return _employeeType.Code; }
             set { _employeeType = EmployeeType.TypeFrom(value); }
         }
 

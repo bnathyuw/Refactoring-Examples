@@ -4,7 +4,7 @@ namespace RefactoringExamples.ReplaceConditionalWithPolymorphism
 {
     public abstract class EmployeeType
     {
-        public abstract int TypeCode { get; }
+        public abstract int Code { get; }
 
         public static EmployeeType TypeFrom(int value)
         {
@@ -28,16 +28,16 @@ namespace RefactoringExamples.ReplaceConditionalWithPolymorphism
 
     class Engineer : EmployeeType
     {
-        public override int TypeCode => Engineer;
+        public override int Code => Engineer;
     }
 
     class Salesperson : EmployeeType
     {
-        public override int TypeCode => Salesperson;
+        public override int Code => Salesperson;
     }
 
     class Manager : EmployeeType
     {
-        public override int TypeCode => Manager;
+        public override int Code => Manager;
     }
 }
