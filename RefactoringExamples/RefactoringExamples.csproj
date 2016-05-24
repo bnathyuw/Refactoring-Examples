@@ -77,6 +77,11 @@
     <Compile Include="ReplaceTempWithQuery\OrderLineShould.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClassTests.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Employee.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeInEngineerRoleShould.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeInManagerRoleShould.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeInSalespersonRoleShould.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeType.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\Employee.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInManagerRoleShould.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInSalespersonRoleShould.cs" />
