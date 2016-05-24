@@ -26,7 +26,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         [TestCase(Employee.Salesperson, BasicSalary + Commission)]
         public void Get_a_pay_cut_on_demotion(int employeeType, int expectedSalary)
         {
-            _manager.EmployeeType = employeeType;
+            _manager.Type = employeeType;
 
             Assert.That(_manager.PayAmount(), Is.EqualTo(expectedSalary));
         }

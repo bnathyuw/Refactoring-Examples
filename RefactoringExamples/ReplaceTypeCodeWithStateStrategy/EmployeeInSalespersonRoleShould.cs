@@ -25,7 +25,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         [Test]
         public void Get_a_pay_rise_on_promotion()
         {
-            _salesperson.EmployeeType = Employee.Manager;
+            _salesperson.Type = Employee.Manager;
 
             Assert.That(_salesperson.PayAmount(), Is.EqualTo(BasicSalary + Bonus));
         }
@@ -33,7 +33,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         [Test]
         public void Get_a_pay_cut_on_demotion()
         {
-            _salesperson.EmployeeType = Employee.Engineer;
+            _salesperson.Type = Employee.Engineer;
 
             Assert.That(_salesperson.PayAmount(), Is.EqualTo(BasicSalary));
         }

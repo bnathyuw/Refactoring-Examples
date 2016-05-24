@@ -26,7 +26,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         [TestCase(Employee.Salesperson, BasicSalary + Commission)]
         public void Get_a_pay_rise_on_promotion(int employeeType, int expectedSalary)
         {
-            _engineer.EmployeeType = employeeType;
+            _engineer.Type = employeeType;
 
             Assert.That(_engineer.PayAmount(), Is.EqualTo(expectedSalary));
         }
