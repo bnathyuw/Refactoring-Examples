@@ -71,6 +71,8 @@
     <Compile Include="MoveField\AccountType.cs" />
     <Compile Include="MoveField\MoveFieldTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveAssignmentsToParameters\DiscountCalculator.cs" />
+    <Compile Include="RemoveAssignmentsToParameters\DiscountCalculatorShould.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectSut.cs" />
     <Compile Include="ReplaceMethodWithMethodObject\ReplaceMethodWithMethodObjectTests.cs" />
     <Compile Include="ReplaceTempWithQuery\OrderLine.cs" />
