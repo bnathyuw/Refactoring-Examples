@@ -3,12 +3,12 @@
 namespace RefactoringExamples.ReplaceMethodWithMethodObject
 {
     [TestFixture]
-    public class ReplaceMethodWithMethodObjectTests
+    public class AccountShould
     {
         [Test]
         public void Gives_assured_result()
         {
-            var sut = new ReplaceMethodWithMethodObjectSut();
+            var sut = new Account();
 
             var actual = sut.Gamma(2, 4, 6);
 

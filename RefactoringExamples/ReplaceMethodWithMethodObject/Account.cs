@@ -1,6 +1,6 @@
 ﻿namespace RefactoringExamples.ReplaceMethodWithMethodObject
 {
-    public class ReplaceMethodWithMethodObjectSut
+    public class Account
     {
         public int Gamma(int inputVal, int quantity, int yearToDate)
         {
