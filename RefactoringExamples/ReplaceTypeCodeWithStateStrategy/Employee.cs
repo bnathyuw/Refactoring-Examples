@@ -4,9 +4,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 {
     public class Employee
     {
-        private readonly int _monthlySalary;
-        private readonly int _commission;
-        private readonly int _bonus;
+        public int MonthlySalary { get; }
+        public int Commission { get; }
+        public int Bonus { get; }
         private EmployeeType _employeeType;
         public const int Engineer = 0;
         public const int Salesperson = 1;
@@ -15,9 +15,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         public Employee(int type)
         {
             Type = type;
-            _monthlySalary = 100;
-            _commission = 10;
-            _bonus = 20;
+            MonthlySalary = 100;
+            Commission = 10;
+            Bonus = 20;
         }
 
         public int Type
@@ -35,11 +35,11 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             switch (employeeType.Code)
             {
                 case Engineer:
-                    return employee._monthlySalary;
+                    return employee.MonthlySalary;
                 case Salesperson:
-                    return employee._monthlySalary + employee._commission;
+                    return employee.MonthlySalary + employee.Commission;
                 case Manager:
-                    return employee._monthlySalary + employee._bonus;
+                    return employee.MonthlySalary + employee.Bonus;
                 default:
                     throw new Exception("Incorrect Employee");
             }
