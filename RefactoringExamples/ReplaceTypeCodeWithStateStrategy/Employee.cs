@@ -2,6 +2,30 @@ using System;
 
 namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 {
+    public class BasicRemuneration
+    {
+        public static int BasicSalary(Employee employee)
+        {
+            return employee.MonthlySalary;
+        }
+    }
+
+    public class RemunerationWithCommission
+    {
+        public static int SalaryWithCommission(Employee employee)
+        {
+            return employee.MonthlySalary + employee.Commission;
+        }
+    }
+
+    public class RemunerationWithBonus
+    {
+        public static int SalaryWithBonus(Employee employee)
+        {
+            return employee.MonthlySalary + employee.Bonus;
+        }
+    }
+
     public class Employee
     {
         private int _type;
@@ -29,30 +53,15 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         {
             switch (_type)
             {
-                case Engineer:
-                    return BasicSalary(this);
-                case Salesperson:
-                    return SalaryWithCommission(this);
-                case Manager:
-                    return SalaryWithBonus(this);
+                case Employee.Engineer:
+                    return BasicRemuneration.BasicSalary(this);
+                case Employee.Salesperson:
+                    return RemunerationWithCommission.SalaryWithCommission(this);
+                case Employee.Manager:
+                    return RemunerationWithBonus.SalaryWithBonus(this);
                 default:
                     throw new Exception("Incorrect Employee");
             }
-        }
-
-        private static int BasicSalary(Employee employee)
-        {
-            return employee.MonthlySalary;
-        }
-
-        private static int SalaryWithCommission(Employee employee)
-        {
-            return employee.MonthlySalary + employee.Commission;
-        }
-
-        private static int SalaryWithBonus(Employee employee)
-        {
-            return employee.MonthlySalary + employee.Bonus;
         }
     }
 }
