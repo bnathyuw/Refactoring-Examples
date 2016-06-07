@@ -8,7 +8,6 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public static Remuneration FromType(int type)
         {
-            Remuneration remuneration;
             switch (type)
             {
                 case Employee.Engineer:
