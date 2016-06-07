@@ -15,9 +15,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         }
     }
 
-    public class RemunerationWithCommission
+    public class RemunerationWithCommission : Remuneration
     {
-        public int PayAmount(Employee employee)
+        public override int PayAmount(Employee employee)
         {
             return employee.MonthlySalary + employee.Commission;
         }
