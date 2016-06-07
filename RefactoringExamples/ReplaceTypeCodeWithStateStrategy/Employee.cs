@@ -56,6 +56,12 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
+            var remuneration = Remuneration();
+            return remuneration.PayAmount(this);
+        }
+
+        private Remuneration Remuneration()
+        {
             Remuneration remuneration;
             switch (_type)
             {
@@ -71,8 +77,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 default:
                     throw new Exception("Incorrect Employee");
             }
-            return remuneration.PayAmount(this);
-
+            return remuneration;
         }
     }
 }
