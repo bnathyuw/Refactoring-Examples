@@ -19,14 +19,12 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             }
         }
 
-        public abstract int Code { get; }
-
         public abstract int PayAmount(Employee employee);
     }
 
     class Engineer : EmployeeType
     {
-        public override int Code => Employee.Engineer;
+        public virtual int Code => Employee.Engineer;
 
         public override int PayAmount(Employee employee)
         {
@@ -46,7 +44,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
     class Salesperson : EmployeeType
     {
-        public override int Code => Employee.Salesperson;
+        public virtual int Code => Employee.Salesperson;
 
         public override int PayAmount(Employee employee)
         {
@@ -66,7 +64,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
     class Manager : EmployeeType
     {
-        public override int Code => Employee.Manager;
+        public virtual int Code => Employee.Manager;
 
         public override int PayAmount(Employee employee)
         {
