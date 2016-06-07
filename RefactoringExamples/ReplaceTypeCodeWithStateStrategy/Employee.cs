@@ -60,6 +60,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         public Employee(int type)
         {
             _type = type;
+            _remuneration = Remuneration.FromType(_type);
             MonthlySalary = 100;
             Commission = 10;
             Bonus = 20;
@@ -67,12 +68,15 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int Type
         {
-            set { _type = value; }
+            set
+            {
+                _type = value;
+                _remuneration = Remuneration.FromType(_type);
+            }
         }
 
         public int PayAmount()
         {
-            _remuneration = Remuneration.FromType(_type);
             return _remuneration.PayAmount(this);
         }
     }
