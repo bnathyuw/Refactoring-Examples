@@ -21,7 +21,14 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public abstract int Code { get; }
 
-        public int PayAmount(Employee employee)
+        public abstract int PayAmount(Employee employee);
+    }
+
+    class Engineer : EmployeeType
+    {
+        public override int Code => Employee.Engineer;
+
+        public override int PayAmount(Employee employee)
         {
             switch (Code)
             {
@@ -37,18 +44,43 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         }
     }
 
-    class Engineer : EmployeeType
-    {
-        public override int Code => Employee.Engineer;
-    }
-
     class Salesperson : EmployeeType
     {
         public override int Code => Employee.Salesperson;
+
+        public override int PayAmount(Employee employee)
+        {
+            switch (Code)
+            {
+                case Employee.Engineer:
+                    return employee.MonthlySalary;
+                case Employee.Salesperson:
+                    return employee.MonthlySalary + employee.Commission;
+                case Employee.Manager:
+                    return employee.MonthlySalary + employee.Bonus;
+                default:
+                    throw new Exception("Incorrect Employee");
+            }
+        }
     }
 
     class Manager : EmployeeType
     {
         public override int Code => Employee.Manager;
+
+        public override int PayAmount(Employee employee)
+        {
+            switch (Code)
+            {
+                case Employee.Engineer:
+                    return employee.MonthlySalary;
+                case Employee.Salesperson:
+                    return employee.MonthlySalary + employee.Commission;
+                case Employee.Manager:
+                    return employee.MonthlySalary + employee.Bonus;
+                default:
+                    throw new Exception("Incorrect Employee");
+            }
+        }
     }
 }
