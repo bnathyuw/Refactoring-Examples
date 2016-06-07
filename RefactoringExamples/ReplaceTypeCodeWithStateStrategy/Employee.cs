@@ -2,9 +2,14 @@ using System;
 
 namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 {
-    public class BasicRemuneration
+    public abstract class Remuneration
     {
-        public int PayAmount(Employee employee)
+        public abstract int PayAmount(Employee employee);
+    }
+
+    public class BasicRemuneration : Remuneration
+    {
+        public override int PayAmount(Employee employee)
         {
             return employee.MonthlySalary;
         }
