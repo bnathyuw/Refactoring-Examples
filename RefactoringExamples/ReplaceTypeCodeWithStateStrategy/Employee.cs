@@ -56,10 +56,10 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
+            Remuneration remuneration;
             switch (_type)
             {
                 case Employee.Engineer:
-                    Remuneration remuneration;
                     remuneration = new BasicRemuneration();
                     return remuneration.PayAmount(this);
                 case Employee.Salesperson:
