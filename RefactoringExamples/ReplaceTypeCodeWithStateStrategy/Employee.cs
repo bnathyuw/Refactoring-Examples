@@ -16,7 +16,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 case Employee.Salesperson:
                     return new RemunerationWithCommission();
                 case Employee.Manager:
-                    remuneration = new RemunerationWithBonus();
+                    return new RemunerationWithBonus();
                     break;
                 default:
                     throw new Exception("Incorrect Employee");
