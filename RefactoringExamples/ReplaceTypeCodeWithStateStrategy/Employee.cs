@@ -5,6 +5,26 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
     public abstract class Remuneration
     {
         public abstract int PayAmount(Employee employee);
+
+        public static Remuneration FromType(int type)
+        {
+            Remuneration remuneration;
+            switch (type)
+            {
+                case Employee.Engineer:
+                    remuneration = new BasicRemuneration();
+                    break;
+                case Employee.Salesperson:
+                    remuneration = new RemunerationWithCommission();
+                    break;
+                case Employee.Manager:
+                    remuneration = new RemunerationWithBonus();
+                    break;
+                default:
+                    throw new Exception("Incorrect Employee");
+            }
+            return remuneration;
+        }
     }
 
     public class BasicRemuneration : Remuneration
@@ -56,28 +76,8 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
-            var remuneration = Remuneration(_type);
+            var remuneration = Remuneration.FromType(_type);
             return remuneration.PayAmount(this);
-        }
-
-        private static Remuneration Remuneration(int type)
-        {
-            Remuneration remuneration;
-            switch (type)
-            {
-                case Employee.Engineer:
-                    remuneration = new BasicRemuneration();
-                    break;
-                case Employee.Salesperson:
-                    remuneration = new RemunerationWithCommission();
-                    break;
-                case Employee.Manager:
-                    remuneration = new RemunerationWithBonus();
-                    break;
-                default:
-                    throw new Exception("Incorrect Employee");
-            }
-            return remuneration;
         }
     }
 }
