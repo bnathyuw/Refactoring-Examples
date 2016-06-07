@@ -30,14 +30,29 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             switch (_type)
             {
                 case Engineer:
-                    return _monthlySalary;
+                    return BasicSalary();
                 case Salesperson:
-                    return _monthlySalary + _commission;
+                    return SalaryWithCommission();
                 case Manager:
-                    return _monthlySalary + _bonus;
+                    return SalaryWithBonus();
                 default:
                     throw new Exception("Incorrect Employee");
             }
+        }
+
+        private int BasicSalary()
+        {
+            return _monthlySalary;
+        }
+
+        private int SalaryWithCommission()
+        {
+            return _monthlySalary + _commission;
+        }
+
+        private int SalaryWithBonus()
+        {
+            return _monthlySalary + _bonus;
         }
     }
 }
