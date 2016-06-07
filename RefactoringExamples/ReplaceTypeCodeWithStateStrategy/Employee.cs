@@ -58,7 +58,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public Employee(int type)
         {
-            _remuneration = Remuneration.FromType(type);
+            Type = type;
             MonthlySalary = 100;
             Commission = 10;
             Bonus = 20;
