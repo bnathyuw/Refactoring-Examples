@@ -7,7 +7,6 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         private readonly int _monthlySalary;
         private readonly int _commission;
         private readonly int _bonus;
-        private int _type;
         private EmployeeType _employeeType;
         public const int Engineer = 0;
         public const int Salesperson = 1;
@@ -24,11 +23,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         public int Type
         {
             get { return _employeeType.Code; }
-            set
-            {
-                _type = value;
-                _employeeType = EmployeeType.FromCode(value);
-            }
+            set { _employeeType = EmployeeType.FromCode(value); }
         }
 
         public int PayAmount()
