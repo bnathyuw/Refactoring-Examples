@@ -8,6 +8,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         private readonly int _commission;
         private readonly int _bonus;
         private int _type;
+        private EmployeeType _employeeType;
         public const int Engineer = 0;
         public const int Salesperson = 1;
         public const int Manager = 2;
