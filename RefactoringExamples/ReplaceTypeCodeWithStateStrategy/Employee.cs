@@ -23,7 +23,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int Type
         {
-            get { return _type; }
+            get { return _employeeType.Code; }
             set
             {
                 _type = value;

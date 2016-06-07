@@ -18,17 +18,22 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                     throw new Exception("");
             }
         }
+
+        public abstract int Code { get; }
     }
 
     class Engineer : EmployeeType
     {
+        public override int Code => Employee.Engineer;
     }
 
     class Salesperson : EmployeeType
     {
+        public override int Code => Employee.Salesperson;
     }
 
     class Manager : EmployeeType
     {
+        public override int Code => Employee.Manager;
     }
 }
