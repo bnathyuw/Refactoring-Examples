@@ -49,6 +49,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
     public class Employee
     {
         private int _type;
+        private Remuneration _remuneration;
         public int MonthlySalary { get; }
         public int Commission { get; }
         public int Bonus { get; }
@@ -71,8 +72,8 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
-            var remuneration = Remuneration.FromType(_type);
-            return remuneration.PayAmount(this);
+            _remuneration = Remuneration.FromType(_type);
+            return _remuneration.PayAmount(this);
         }
     }
 }
