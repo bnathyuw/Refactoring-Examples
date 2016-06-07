@@ -24,7 +24,11 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         public int Type
         {
             get { return _type; }
-            set { _type = value; }
+            set
+            {
+                _type = value;
+                _employeeType = EmployeeType.FromCode(value);
+            }
         }
 
         public int PayAmount()
