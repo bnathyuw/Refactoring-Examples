@@ -4,7 +4,6 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 {
     public class Employee
     {
-        private int _type;
         private readonly int _monthlySalary;
         private readonly int _commission;
         private readonly int _bonus;
@@ -14,20 +13,17 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public Employee(int type)
         {
-            _type = type;
+            Type = type;
             _monthlySalary = 100;
             _commission = 10;
             _bonus = 20;
         }
 
-        public int Type
-        {
-            set { _type = value; }
-        }
+        public int Type { get; set; }
 
         public int PayAmount()
         {
-            switch (_type)
+            switch (Type)
             {
                 case Engineer:
                     return _monthlySalary;
