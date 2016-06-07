@@ -4,7 +4,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 {
     public class BasicRemuneration
     {
-        public static int PayAmount(Employee employee)
+        public static int PayAmount(Employee employee, BasicRemuneration basicRemuneration)
         {
             return employee.MonthlySalary;
         }
@@ -54,7 +54,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             switch (_type)
             {
                 case Employee.Engineer:
-                    return BasicRemuneration.PayAmount(this);
+                    return BasicRemuneration.PayAmount(this, new BasicRemuneration());
                 case Employee.Salesperson:
                     return RemunerationWithCommission.PayAmount(this);
                 case Employee.Manager:
