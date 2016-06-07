@@ -12,7 +12,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
     public class RemunerationWithCommission
     {
-        public static int PayAmount(Employee employee)
+        public static int PayAmount(Employee employee, RemunerationWithCommission remunerationWithCommission)
         {
             return employee.MonthlySalary + employee.Commission;
         }
@@ -56,7 +56,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 case Employee.Engineer:
                     return new BasicRemuneration().PayAmount(this);
                 case Employee.Salesperson:
-                    return RemunerationWithCommission.PayAmount(this);
+                    return RemunerationWithCommission.PayAmount(this, new RemunerationWithCommission());
                 case Employee.Manager:
                     return RemunerationWithBonus.PayAmount(this);
                 default:
