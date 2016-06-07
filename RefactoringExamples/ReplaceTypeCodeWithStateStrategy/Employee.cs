@@ -7,6 +7,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         private readonly int _monthlySalary;
         private readonly int _commission;
         private readonly int _bonus;
+        private int _type;
         public const int Engineer = 0;
         public const int Salesperson = 1;
         public const int Manager = 2;
@@ -19,7 +20,11 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             _bonus = 20;
         }
 
-        public int Type { get; set; }
+        public int Type
+        {
+            get { return _type; }
+            set { _type = value; }
+        }
 
         public int PayAmount()
         {
