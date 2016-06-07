@@ -20,7 +20,6 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 default:
                     throw new Exception("Incorrect Employee");
             }
-            return remuneration;
         }
     }
 
