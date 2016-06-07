@@ -24,11 +24,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
     class Engineer : EmployeeType
     {
-        public virtual int Code => Employee.Engineer;
-
         public override int PayAmount(Employee employee)
         {
-            switch (Code)
+            switch (Employee.Engineer)
             {
                 case Employee.Engineer:
                     return employee.MonthlySalary;
