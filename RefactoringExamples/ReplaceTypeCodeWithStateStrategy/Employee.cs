@@ -5,9 +5,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
     public class Employee
     {
         private int _type;
-        private readonly int _monthlySalary;
-        private readonly int _commission;
-        private readonly int _bonus;
+        public int MonthlySalary { get; }
+        public int Commission { get; }
+        public int Bonus { get; }
         public const int Engineer = 0;
         public const int Salesperson = 1;
         public const int Manager = 2;
@@ -15,9 +15,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         public Employee(int type)
         {
             _type = type;
-            _monthlySalary = 100;
-            _commission = 10;
-            _bonus = 20;
+            MonthlySalary = 100;
+            Commission = 10;
+            Bonus = 20;
         }
 
         public int Type
@@ -42,17 +42,17 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         private static int BasicSalary(Employee employee)
         {
-            return employee._monthlySalary;
+            return employee.MonthlySalary;
         }
 
         private static int SalaryWithCommission(Employee employee)
         {
-            return employee._monthlySalary + employee._commission;
+            return employee.MonthlySalary + employee.Commission;
         }
 
         private static int SalaryWithBonus(Employee employee)
         {
-            return employee._monthlySalary + employee._bonus;
+            return employee.MonthlySalary + employee.Bonus;
         }
     }
 }
