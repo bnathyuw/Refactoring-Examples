@@ -88,6 +88,7 @@
     <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInManagerRoleShould.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInSalespersonRoleShould.cs" />
     <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeInEngineerRoleShould.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateStrategy\EmployeeType.cs" />
     <Compile Include="SeparateQueryFromModifier\ISendAlerts.cs" />
     <Compile Include="SeparateQueryFromModifier\SecurityChecker.cs" />
     <Compile Include="SeparateQueryFromModifier\SeparateQueryFromModifierTests.cs" />
