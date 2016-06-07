@@ -27,6 +27,11 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
+            return Pay();
+        }
+
+        private int Pay()
+        {
             switch (_employeeType.Code)
             {
                 case Engineer:
