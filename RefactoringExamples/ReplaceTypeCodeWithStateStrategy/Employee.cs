@@ -61,7 +61,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
             {
                 case Employee.Engineer:
                     remuneration = new BasicRemuneration();
-                    return remuneration.PayAmount(this);
+                    break;
                 case Employee.Salesperson:
                     remuneration = new RemunerationWithCommission();
                     return remuneration.PayAmount(this);
@@ -71,6 +71,8 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 default:
                     throw new Exception("Incorrect Employee");
             }
+            return remuneration.PayAmount(this);
+
         }
     }
 }
