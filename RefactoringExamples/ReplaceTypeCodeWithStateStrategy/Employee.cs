@@ -66,7 +66,8 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                     remuneration = new RemunerationWithCommission();
                     return remuneration.PayAmount(this);
                 case Employee.Manager:
-                    return new RemunerationWithBonus().PayAmount(this);
+                    remuneration = new RemunerationWithBonus();
+                    return remuneration.PayAmount(this);
                 default:
                     throw new Exception("Incorrect Employee");
             }
