@@ -20,6 +20,21 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         }
 
         public abstract int Code { get; }
+
+        public int PayAmount(Employee employee)
+        {
+            switch (Code)
+            {
+                case Employee.Engineer:
+                    return employee.MonthlySalary;
+                case Employee.Salesperson:
+                    return employee.MonthlySalary + employee.Commission;
+                case Employee.Manager:
+                    return employee.MonthlySalary + employee.Bonus;
+                default:
+                    throw new Exception("Incorrect Employee");
+            }
+        }
     }
 
     class Engineer : EmployeeType

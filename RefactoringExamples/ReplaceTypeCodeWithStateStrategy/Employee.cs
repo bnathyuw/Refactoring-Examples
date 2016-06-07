@@ -27,22 +27,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int PayAmount()
         {
-            return Pay(this, _employeeType);
-        }
-
-        private static int Pay(Employee employee, EmployeeType employeeType)
-        {
-            switch (employeeType.Code)
-            {
-                case Engineer:
-                    return employee.MonthlySalary;
-                case Salesperson:
-                    return employee.MonthlySalary + employee.Commission;
-                case Manager:
-                    return employee.MonthlySalary + employee.Bonus;
-                default:
-                    throw new Exception("Incorrect Employee");
-            }
+            return _employeeType.PayAmount(this);
         }
     }
 }
