@@ -26,22 +26,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
     {
         public override int PayAmount(Employee employee)
         {
-            if (Employee.Engineer == Employee.Engineer)
-            {
-                return employee.MonthlySalary;
-            }
-            else if (Employee.Engineer == Employee.Salesperson)
-            {
-                return employee.MonthlySalary + employee.Commission;
-            }
-            else if (Employee.Engineer == Employee.Manager)
-            {
-                return employee.MonthlySalary + employee.Bonus;
-            }
-            else
-            {
-                throw new Exception("Incorrect Employee");
-            }
+            return employee.MonthlySalary;
         }
     }
 
