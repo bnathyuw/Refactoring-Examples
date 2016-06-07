@@ -20,7 +20,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
     public class RemunerationWithBonus
     {
-        public static int PayAmount(Employee employee)
+        public static int PayAmount(Employee employee, RemunerationWithBonus remunerationWithBonus)
         {
             return employee.MonthlySalary + employee.Bonus;
         }
@@ -58,7 +58,7 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
                 case Employee.Salesperson:
                     return new RemunerationWithCommission().PayAmount(this);
                 case Employee.Manager:
-                    return RemunerationWithBonus.PayAmount(this);
+                    return RemunerationWithBonus.PayAmount(this, new RemunerationWithBonus());
                 default:
                     throw new Exception("Incorrect Employee");
             }
