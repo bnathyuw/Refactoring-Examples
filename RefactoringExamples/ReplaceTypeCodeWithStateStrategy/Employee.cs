@@ -23,9 +23,9 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
         }
     }
 
-    public class RemunerationWithBonus
+    public class RemunerationWithBonus : Remuneration
     {
-        public int PayAmount(Employee employee)
+        public override int PayAmount(Employee employee)
         {
             return employee.MonthlySalary + employee.Bonus;
         }
