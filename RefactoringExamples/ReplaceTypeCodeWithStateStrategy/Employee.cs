@@ -22,13 +22,12 @@ namespace RefactoringExamples.ReplaceTypeCodeWithStateStrategy
 
         public int Type
         {
-            get { return _employeeType.Code; }
             set { _employeeType = EmployeeType.FromCode(value); }
         }
 
         public int PayAmount()
         {
-            switch (Type)
+            switch (_employeeType.Code)
             {
                 case Engineer:
                     return _monthlySalary;
