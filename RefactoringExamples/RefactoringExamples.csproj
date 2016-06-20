@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtractClass\ExtractClassTests.cs" />
+    <Compile Include="ExtractClass\PersonShould.cs" />
     <Compile Include="ExtractClass\Person.cs" />
     <Compile Include="ExtractMethod\CustomerAccount.cs" />
     <Compile Include="ExtractMethod\CustomerAccountShould.cs" />
