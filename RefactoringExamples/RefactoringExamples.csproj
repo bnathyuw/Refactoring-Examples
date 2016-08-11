@@ -70,6 +70,10 @@
     <Compile Include="MoveField\Account.cs" />
     <Compile Include="MoveField\AccountType.cs" />
     <Compile Include="MoveField\MoveFieldTests.cs" />
+    <Compile Include="PreserveWholeObject\HeatingPlan.cs" />
+    <Compile Include="PreserveWholeObject\Room.cs" />
+    <Compile Include="PreserveWholeObject\RoomShould.cs" />
+    <Compile Include="PreserveWholeObject\TempRange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveAssignmentsToParameters\DiscountCalculator.cs" />
     <Compile Include="RemoveAssignmentsToParameters\DiscountCalculatorShould.cs" />
