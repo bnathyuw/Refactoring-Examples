@@ -4,10 +4,10 @@ using NUnit.Framework;
 namespace RefactoringExamples.IntroduceParameterObject
 {
     [TestFixture]
-    public class IntroduceParameterObjectTests
+    public class AccountShould
     {
         [Test]
-        public void Gives_correct_result()
+        public void Give_correct_result()
         {
             var account = new Account(new[]
                 {
